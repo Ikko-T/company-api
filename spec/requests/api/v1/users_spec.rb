@@ -52,7 +52,6 @@ RSpec.describe "Api::V1::Users", type: :request do
 
       it "occurs an error" do
         expect{ subject }.to raise_error(ActiveRecord::RecordNotFound)
-        # binding.pry
       end
     end
   end
