@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     end
   end
 
-  # root '/'
+  root 'api/v1/users#index'
 end
