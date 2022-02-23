@@ -9,7 +9,7 @@ require 'faker'
 
 User.delete_all
 
-5.times do
+10.times do
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
   company = Faker::Company.name
