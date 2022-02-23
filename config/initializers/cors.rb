@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://ikko-t.github.io/self-intro-api-frontend/'
+    origins 'https://ikko-t.github.io'
 
     resource '*',
       headers: :any,
