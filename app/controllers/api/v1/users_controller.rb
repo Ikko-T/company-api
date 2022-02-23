@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
   before_action :set_user, except: %i[index create]
 
   def index
-    users = User.all
+    users = User.all.order(created_at: :desc)
     render json: users, except: [:created_at, :updated_at]
   end
 

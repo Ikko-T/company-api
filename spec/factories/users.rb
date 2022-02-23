@@ -8,6 +8,6 @@ FactoryBot.define do
     phone_number { Faker::PhoneNumber.cell_phone }
     twitter { "@#{first_name}".downcase }
     message { Faker::Lorem.paragraph }
-    gender { rand(0..2) }
+    gender { rand(3) }
   end
 end
